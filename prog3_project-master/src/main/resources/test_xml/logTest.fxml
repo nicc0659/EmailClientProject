@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../img/Gold_interface.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="logArea" layoutX="15.0" layoutY="16.0" prefHeight="368.0" prefWidth="570.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

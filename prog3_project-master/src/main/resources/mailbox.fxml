@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0"
+            prefWidth="719.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.MailboxController">
+   <ImageView fitHeight="503.0" fitWidth="719.0">
+      <Image url="@img/MailBoxPrincipaleProgettoPart2.png"/>
+   </ImageView>
+   <ListView fx:id="mailList" layoutX="38.0" layoutY="166.0" onMouseClicked="#handleRead" prefHeight="298.0"
+             prefWidth="162.0" style="-fx-background-color: #00001a;"/>
+   <Button layoutX="233.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleNewMail" prefHeight="44.0"
+           prefWidth="36.0" style="-fx-background-radius: 100; -fx-background-color: #000000;" textAlignment="CENTER"
+           textFill="WHITE">
+      <graphic>
+         <ImageView id="newMail" fitHeight="37.0" fitWidth="37.0" preserveRatio="true">
+            <Image url="@img/001-mail.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button layoutX="360.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="44.0"
+           prefWidth="51.0" style="-fx-background-radius: 100; -fx-background-color: #000000;" textAlignment="CENTER"
+           textFill="WHITE">
+      <graphic>
+         <ImageView id="deleteMail" fitHeight="37.0" fitWidth="37.0">
+            <Image url="@img/090-mail-85.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button layoutX="492.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleForward" prefHeight="44.0"
+           prefWidth="51.0" style="-fx-background-radius: 100; -fx-background-color: #000000;" textAlignment="CENTER"
+           textFill="WHITE">
+      <graphic>
+         <ImageView id="forwardMail" fitHeight="37.0" fitWidth="37.0">
+            <Image url="@img/034-mail-31.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <ImageView fx:id="onlineStatus" fitHeight="50.0" fitWidth="60.0" layoutX="608.0" layoutY="39.0">
+      <Image url="@img/status-online.png"/>
+   </ImageView>
+   <AnchorPane fx:id="readOrSend" layoutX="206.0" layoutY="101.0" prefHeight="360.0" prefWidth="481.0"/>
+</AnchorPane>
